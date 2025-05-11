@@ -39,8 +39,6 @@ public sealed class Plugin : IDalamudPlugin
         PluginInterface.UiBuilder.OpenMainUi += ToggleMainUI;
 
         Svc.Framework.Update += MainWindow.Tick;
-
-        ToggleMainUI();
     }
 
     public void Dispose()
